@@ -1,0 +1,29 @@
+python3中有两种表示字符序列的类型：bytes和str
+
+bytes: 这个的实例包含原始的8位值
+
+str: 这个的实例包含Unicode字符
+
+
+python2也有两种表示字符序列的类型：str和unicode
+
+str的实例包含原始的8位值
+
+unicode的实例包含unicode字符
+
+note：
+     python3的str实例和python2的unicode实例都没有和teding
+     的二进制编码形式相关联
+     要想把Unicode字符转成二进制数据，就必须使用encode方法
+
+     要想把二进制数据转成Unicode字符，则必须使用decode方法
+
+编写python程序的时候一定要把编码和解码的操作放在界面的最外围来做
+
+
+在python中使用原始的8位值与unicode字符时，有两个问题要主要
+
+1. 在python2中，如果str只包含7位ascii字符，那么unicode和str实例似乎就成了同一种类型
+
+2. 在python3中，如果通过内置的open函数获取了文件句柄，那么请注意，该句柄默认采用了utf8编码格式来操作wenjian
+   而在python2中，文件操作的默认编码格式是二进制的形式，这可能会导致程序出现奇怪的错误
