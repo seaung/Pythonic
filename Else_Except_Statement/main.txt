@@ -1,0 +1,12 @@
+python提供了一种很多编程语言都不支持的功能
+那就是可以在循环内部的语句块后面直接编写else块
+
+奇怪的是这种else块会在整个循环执行完之后立刻执行
+
+try/except/else结构的else含义是：
+    如前面的try没有失败，那就执行else语句块
+
+try/finally：
+    这里的finally的意思是，执行过前面的try块后，总是执行finally块
+
+for/else在循环里面使用break语句提前跳出，会导致程序不执行else块
