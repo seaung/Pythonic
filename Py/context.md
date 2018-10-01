@@ -1,6 +1,6 @@
 #### 上下文管理器
 
->
+>>>
     写代码时，希望把一些操作放置到代码模块中，这样在代码块中执行时就可以保持
     某种运行状态，而离开代码块时就执行另外的一种操作，结束当前状态
     即上下文管理器的目的就是实现对象的使用范围，如果超出范围就采取处理
@@ -27,4 +27,28 @@
     
     with TestManager("test") as tm:
         print(tm.text)
+```
+
+>>>
+    python 标准库contextlib中的@contextmanager
+
+    @contextmanager装饰器把简单的生成器函数变成上下文管理器
+
+
+```
+    import contextlib
+
+    @contextlib.contextmanager
+    def looking_glass():
+        import sys
+
+        original_write = sys.stdout.write()
+
+        def reverse_write(text):
+            original_write(text[::-1])
+
+        sys.stdout.write = reverse_write()
+
+        yield "abcdefg"
+        sys.stdout.write = original_write
 ```
