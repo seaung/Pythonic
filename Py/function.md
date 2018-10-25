@@ -107,3 +107,47 @@
 
     python允许定义带默认参数值的函数，当函数被调用时无参数，那么这些默认值就会被传递给实参
 
+
+#### 使用*接受位置参数
+
+
+>>>
+   
+    当参数被调用在函数内部时，星号将一组可变数量的位置参数集合成参数值的元祖
+
+    def print_args(*args):
+        print("positional argument tuple : ", args)
+
+
+#### 使用**收集关键字参数
+
+
+>>>
+    
+    使用两个星号可以将参数收集到一个字典中，参数的名字是字典的建，对应数的值是字典的值
+
+    def print_kwargs(**kwargs):
+        print("keyword arguments : ", kwargs)
+
+
+#### 内部函数
+
+>>>
+    
+    python中可以在函数中定义另外一个函数
+
+    def outer(a, b):
+        def inner(c, d):
+            return c + d
+        return inner(a, b)
+    
+    >>> outer(2, 4)
+
+
+#### 闭包
+
+>>>
+    
+    内部函数可以看作一个闭包，闭包是一个可以有另外一个函数动态生成的函数，并且可以改变和存储函数外创建的变量的值
+
+
