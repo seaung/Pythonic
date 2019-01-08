@@ -2,11 +2,11 @@
 
 
 ###### 使用[]或list()创建列表
->>>
+>
 
-   >>> empty_list = []
-   >>> weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
-   >>> big_birds = ['emu', 'ostrich', 'cassowary']
+   >>> empty_list = []<br>
+   >>> weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']<br>
+   >>> big_birds = ['emu', 'ostrich', 'cassowary']<br>
    >>> first_names = ['Graham', 'John', 'Terry', 'Terry', 'Michael']
 
    >>> another_empty_list = list()
@@ -16,7 +16,7 @@
    list是有序的，元素允许重复
 
 ###### 使用list()将其他数据类型转换成列表
->>>
+>
 
     python的list()函数可以将其他数据类型转换成列表类型
 
@@ -38,7 +38,7 @@
     >>> ['a/b', 'c/d', '/e']
 
 ###### 使用[offset]获取元素
->>>
+>
 
     >>> marxes = ['groucho', 'chico', 'harpo']
     >>> marxes[0]
@@ -48,11 +48,11 @@
     >>> harpo
 
 ###### 包含列表的列表
->>>
+>
 
-   >>> small_birds = ['hummingbird', 'finch']
-   >>> extinct_birds = ['dodo', 'passenger pigeon', 'norwegian blue']
-   >>> carol_birds = [3, 'french hens', 2, 'turtledoves']
+   >>> small_birds = ['hummingbird', 'finch']<br>
+   >>> extinct_birds = ['dodo', 'passenger pigeon', 'norwegian blue']<br/>
+   >>> carol_birds = [3, 'french hens', 2, 'turtledoves']<br/>
    >>> all_birds = [small_birds, extinct_birds, 'macaw', carol_birds]
    >>> all_birds
    [['hummingbird', 'finch'], ['dodo', 'passenger pigeon', 'norwegian blue'], 'macaw', [3, 'french hens', 2, 'turtledoves']]
@@ -61,7 +61,7 @@
    ['dodo', 'passenger pigeon', 'norwegian blue']
 
 ###### 使用[offset]修改元素
->>>
+>
 
     >>> marxes = ['groucho', 'chico', 'harpo']
     >>> marxes[2] = 'wanda'
@@ -69,7 +69,7 @@
     ['groucho', 'chico', 'wanda']
 
 ###### 指定范围并使用切片提取元素
->>>
+>
 
     >>> marxes = ['groucho', 'chico', 'harpo']
     >>> marxes[0:2]
@@ -85,14 +85,14 @@
     ['harpo', 'chico', 'groucho']
 
 ###### 使用append()添加元素至尾部
->>>
+>
 
     >>> marxes.append('zeppo')
     >>> marxes
     ['groucho', 'chico', 'harpo', 'zeppo']
 
 ###### 使用extend()或+=合并列表
->>>
+>
 
     >>> marxes = ['groucho', 'chico', 'harpo', 'zeppo']
     >>> others = ['gummo', 'karl']
@@ -105,7 +105,7 @@
     ['groucho', 'chico', 'harpo', 'gummo', 'karl']
 
 #### 使用insert()在指定位置插入元素
->>>
+>
 
    >>> marxes.insert(3, 'gummo')
    >>> marxes
@@ -115,14 +115,14 @@
    ['groucho', 'chico', 'harpo', 'gummo', 'zeppo', 'karl']
 
 ###### 使用del删除指定位置的元素
->>>>
+>
 
     >>> del marxes[-1]
     >>> marxes
     ['groucho', 'chico', 'harpo', 'gummo', 'zeppo']
 
 ###### 使用remove()删除具有指定值的元素
->>>
+>
 
     >>> marxes = ['groucho', 'chico', 'harpo', 'gummo', 'zeppo']
     >>> marxes.remove('gummo')
@@ -130,7 +130,7 @@
     ['groucho', 'chico', 'harpo', 'zeppo']
 
 ###### 使用pop()获取并删除指定位置的元素
->>>
+>
 
     >>> marxes = ['groucho', 'chico', 'harpo', 'zeppo']
     >>> marxes.pop()
@@ -141,14 +141,14 @@
     ['groucho', 'harpo']
 
 ###### 使用index()查询具有特定值的元素位置
->>>
+>
 
     >>> marxes = ['groucho', 'chico', 'zeppo']
     >>> marxes.index('chico')
     1
 
 ###### 使用in判断值是否存在
->>>
+>
 
     >>> marxes = ['groucho', 'chico', 'harpo', 'zeppo']
     >>> 'groucho' in marxes
@@ -157,7 +157,7 @@
     False
 
 ###### 使用count()记录特定值出现的次数
->>>
+>
 
     >>> marxes = ['groucho', 'chico', 'harpo']
     >>> marxes.count('harpo')
@@ -166,14 +166,14 @@
     0
 
 ###### 使用join()转换为字符串
->>>
+>
 
     marxes = ['groucho', 'chico', 'harpo']
     >>> ','.join(marxes)
     'groucho, chico, harpo'
 
 ###### 使用sort()重新排序元素
->>>
+>
 
     1. 列表方法sort()会对源列表进行排序，改变源列表内容
     2. 通用函数sorted()则会返回排好序的列表副本，源列表内容不变
@@ -187,7 +187,7 @@
     ['chico', 'groucho', 'harpo']
 
 ###### 使用len()获取长度
->>>
+>
 
     >>> marxes = ['groucho', 'chico', 'harpo']
     >>> len(marxes)
@@ -197,7 +197,7 @@
 
 
 ###### 使用()创建元组
->>>
+>
 
     >>> empty_tuple = ()
     >>> empty_tuple
@@ -210,7 +210,7 @@
     ('groucho', )
 
 ###### 元组和列表
->>>
+>
 
     在许多地方都可以用元组代替列表，但是元组的方法函数与列表相比要少一些
     元组没有append(),insert()等等，因为一旦创建便无法修改
@@ -222,7 +222,7 @@
     5. 函数的参数是以元组的形式传递的
 
 #### 字典
->>>>
+>
 
     字典与列表类似，但其中元素的顺序无关紧要，因为它们不是通过像 0 或 1
     的偏移量访问的。取而代之,每个元素拥有与之对应的互不相同的键(key)
@@ -231,7 +231,7 @@
     的,因此你可以增加、删除或修改其中的键值对
 
 ###### 使用{}创建字典
->>>
+>
 
     >>> empty_dict = {}
     >>> empty_dict
@@ -240,7 +240,7 @@
     >>> bierce = {"day": 'a period of twenty-four hours, mostly misspent'}
 
 ###### 使用dict()转换为字典
->>>
+>
 
     >>> lol = [['a', 'b'], ['c', 'd'], ['e', 'f']]
     >>> dict(lol)
@@ -259,7 +259,7 @@
     {'c': 'd', 'a': 'b', 'e': 'f'}
 
 ###### 使用[key]添加或修改元素
->>>
+>
 
     >>> python = {'chapman': 'graham', 'cleese': 'john', 'idle': 'eric'}
 
@@ -268,7 +268,7 @@
     >>> python['author'] = 'govaos'
 
 ###### 使用update()合并字典
->>>
+>
 
     使用update()可以将一个字典的键值对复制到另一个字典中去
 
@@ -280,12 +280,12 @@
     {'b': 'platypus', 'a': 1}
 
 ###### 使用del删除具有指定键的元素
->>>
+>
 
     >>> del pythons['marx']
 
 ###### 使用clear()删除所有元素
->>>
+>
 
     使用clear()或者给字典变量重新赋值一个空字典({})可以将字典中所有元素删除
 
@@ -297,7 +297,7 @@
     {}
 
 ###### 使用in判断是否存在
->>>
+>
 
     判断某一个字典存在于一个字典中，可以使用in
 
@@ -307,26 +307,26 @@
     False
 
 ###### 使用[key]获取元素
->>>
+>
 
     >>> pythons['cleese']
     'john'
 
 ###### 使用keys()获取所有键
->>>
+>
 
    >>> signals = {'green': 'go', 'yellow': 'go faster', 'red': 'smile for the camera'}
    >>> signals.keys()
    dict_keys(['green', 'yellow', 'red'])
 
 ###### 使用values()获取所有值
->>>
+>
 
     >>> list(signals.values())
     ['go', 'smile for the camera', 'go faster']
 
 ###### 使用items()获取所有键值对
->>>
+>
 
     >>> list(signals.items())
     [('green', 'go'), ('red', 'smile for the camera'), ('yellow', 'go faster')]
@@ -334,23 +334,24 @@
     每一个键值对以元组的形式返回,例如('green', 'go')
 
 ###### 使用=赋值，使用copy()复制
->>>
+>
 
     >>> signals = {'green': 'go', 'yellow': 'go faster', 'red': 'smile for the camera'}
-    >>> save_signals - signals
+    >>> save_signals = signals
     >>> signals['blue'] = 'confuse everyone'
     >>> save_signals
     {'blue': 'confuse everyone', 'green': 'go', 'red': 'smile for the camera', 'yellow': 'go faster'}
+    >>> save_signals = signals.copy()
 
 #### 集合
->>>
+>
 
     集合就像舍弃了值,仅剩下键的字典一样。键与键之间也不允许重复。如果你仅仅想知道
     某一个元素是否存在而不关心其他的,使用集合是个非常好的选择。如果需要为键附加其
     他信息的话,建议使用字典
 
 ###### 使用set()见其他类型转换为集合
->>>
+>
 
     >>> set('letters')
     {'l', 'e', 't', 'r', 's'}
@@ -367,6 +368,6 @@
     {'apple', 'orange', 'cherry'}
 
 ###### 使用in测试是否存在
->>>
+>
 
    >>> 1 in set

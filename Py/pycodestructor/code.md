@@ -1,17 +1,17 @@
 #### 使用#注释
->>>
+>
 
     注释是程序中会被python解释器忽略的一段文本
 
 ###### 使用`\`连接
->>>
+>
 
     >>> aplhabet = 'acffdfdsfsfsfs' + \
     ...             'jjsldfjlsdjfl' + \
     ...             'jsldjflsjlf'
 
 ###### 使用if，elif和else进行比较
->>>
+>
 
     >>> disater = True
     >>> if disater:
@@ -23,7 +23,7 @@
     >>>
 
 ###### 使用while进行循环
->>>
+>
 
     >>> count = 1
     >>> while count <= 5"
@@ -38,7 +38,7 @@
     >>>
 
 ###### 使用break跳出循环
->>>
+>
 
     >>> while True:
     ...    stuff = input(':')
@@ -51,7 +51,7 @@
     >>>
 
 ###### 使用continue跳出循环开始
->>>
+>
 
     >>> while True:
     ...     value = input('integer, please [q to quit]: ')
@@ -67,7 +67,7 @@
     >>>
 
 ###### 循环外使用else
->>>
+>
 
     >>> numbers = [1, 3, 5]
     >>> position = 0
@@ -83,7 +83,7 @@
     no even number found
 
 ###### 使用for迭代
->>>>
+>
 
      >>> rabbits = ['flopsy', 'mopsy', 'conttontail', 'peter']
      >>> current = 0
@@ -105,7 +105,7 @@
      peter
 
 ###### 使用zip()并行迭代
->>>
+>
 
     >>> days = ['monday', 'tuesday', 'wednesday']
     >>> fruits = ['banana', 'orange', 'peach']
@@ -119,7 +119,7 @@
 
 
 ###### 列表推导
->>>
+>
 
     [ expression for item in iterable ]
 
@@ -132,7 +132,7 @@
     [1, 3, 5]
 
 ###### 字典推导
->>>
+>
 
     { key_expression: value_expression for expression in iterable }
 
@@ -142,7 +142,7 @@
     {'l': 1, 'e': 2, 't': 2, 'r': 1, 's': 1}
 
 ###### 集合推导
->>>
+>
 
     { expression for expression in iterable }
 
@@ -151,6 +151,6 @@
     {1, 4}
 
 ###### 生成器推导
->>>
+>
 
     >>> number_thing = (number for number in range(1, 6))
